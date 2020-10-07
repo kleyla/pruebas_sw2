@@ -3,8 +3,8 @@
 function store($datos)
 {
     try {
-        if (validar($datos)) {
-            save($datos);
+        if (validar($datos)) {              // 1
+            save($datos);                   // 2
         } else {
             throw new Exception('Datos vacios!');
         }
